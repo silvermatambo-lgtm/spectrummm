@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#073b5c"/><stop offset="1" stop-color="#29d4dd"/></linearGradient></defs>
+<rect width="100%" height="100%" fill="url(#g)"/><circle cx="80%" cy="20%" r="260" fill="#fff" opacity=".08"/><circle cx="15%" cy="90%" r="320" fill="#fff" opacity=".06"/>
+<text x="50%" y="48%" dominant-baseline="middle" text-anchor="middle" fill="white" font-family="Arial,sans-serif" font-size="62" font-weight="700">ABOUT IMAGE</text>
+<text x="50%" y="57%" dominant-baseline="middle" text-anchor="middle" fill="white" opacity=".8" font-family="Arial,sans-serif" font-size="30">Replace this file with the client image</text></svg>
