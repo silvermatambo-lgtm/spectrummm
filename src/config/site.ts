@@ -1,29 +1,163 @@
 export const siteConfig = {
-  name: "Spectrum SA", shortName: "Spectrum SA", slogan: "A Spectrum of Solutions", eyebrow: "Together, Forever",
-  description: "Affordable funeral cover packages with 48-hour payout support, 24/7 support and nationwide assistance.",
-  seoTitle: "Spectrum SA | Funeral Cover Packages", seoDescription: "Spectrum SA funeral cover packages from Bronze to Platinum, with cash payouts from R5,000 to R20,000. Joining fee R150 once-off.",
-  phoneDisplay: "068 478 3093", phoneTel: "+27684783093", whatsapp: "27684783093", email: "info@spectrum-sa.co.za", website: "www.spectrum-sa.co.za", country: "South Africa", logo: "/images/spectrum-logo.jpeg",
-  nav: [{label:"Home",href:"#home"},{label:"About",href:"#about"},{label:"Packages",href:"#services"},{label:"Benefits",href:"#why-us"},{label:"Gallery",href:"#projects"},{label:"FAQ",href:"#faq"},{label:"Contact",href:"#contact"}],
+  // ===== CORE BRAND DETAILS: EDIT THESE FOR EACH CLIENT =====
+  name: "CLIENT BUSINESS NAME",
+  shortName: "CLIENT NAME",
+  slogan: "Your Trusted Business Partner",
+  eyebrow: "Professional • Reliable • Responsive",
+  description: "Replace this with a short description of the client business and what it does.",
+  seoTitle: "CLIENT BUSINESS NAME | Professional Services",
+  seoDescription: "Replace this with a concise SEO description of the client business, services and service area.",
+  phoneDisplay: "+27 00 000 0000",
+  phoneTel: "+27000000000",
+  whatsapp: "27000000000",
+  email: "info@example.co.za",
+  website: "www.example.co.za",
+  country: "South Africa",
+
+  // Keep the website logo and favicon visually matched when rebranding.
+  // Replace this path with the new client logo path and update index.html favicon to the same file.
+  logo: "/images/spectrum-logo.jpeg",
+
+  nav: [
+    { label: "Home", href: "#home" },
+    { label: "About", href: "#about" },
+    { label: "Services", href: "#services" },
+    { label: "Why Us", href: "#why-us" },
+    { label: "Gallery", href: "#projects" },
+    { label: "FAQ", href: "#faq" },
+    { label: "Contact", href: "#contact" },
+  ],
+
+  // Keep at least one hero item. Three slides are recommended.
   hero: [
-    {image:"/images/hero-funeral-1.jpg",alt:"Funeral remembrance",heading:"Funeral Cover for Peace of Mind",phrases:["Bronze • R5,000 Cash Payout","Silver • R10,000 Cash Payout","Gold • R15,000 Cash Payout","Platinum • R20,000 Cash Payout"],description:"Choose a funeral cover package that suits your needs, backed by support when your family needs it most.",primary:{label:"View Packages",href:"#services"},secondary:{label:"WhatsApp Us",href:"whatsapp"}},
-    {image:"/images/hero-funeral-2.jpg",alt:"Cemetery and remembrance",heading:"Together, Forever",phrases:["48-Hour Payout","24/7 Support","Nationwide Assistance"],description:"Spectrum SA offers practical funeral cover options for individuals and families across South Africa.",primary:{label:"Get a Quote",href:"#quote"},secondary:{label:"Call Now",href:"tel:+27684783093"}},
-    {image:"/images/hero-funeral-3.jpg",alt:"Funeral service",heading:"Cover for You and Your Family",phrases:["Single Cover","Single with Kids","Family with Kids","Children Cover"],description:"Affordable monthly premiums with a once-off R150 joining fee, subject to terms and conditions.",primary:{label:"Enquire Now",href:"#contact"},secondary:{label:"View Benefits",href:"#why-us"}}
+    {
+      image: "/images/hero-funeral-1.jpg",
+      alt: "Client business service",
+      heading: "Professional Solutions for Your Business",
+      phrases: ["Quality Service", "Reliable Support", "Fast Response"],
+      description: "Replace this text with the client's main value proposition.",
+      primary: { label: "View Services", href: "#services" },
+      secondary: { label: "WhatsApp Us", href: "whatsapp" },
+    },
+    {
+      image: "/images/hero-funeral-2.jpg",
+      alt: "Client business team",
+      heading: "Trusted Service You Can Depend On",
+      phrases: ["Professional", "Affordable", "Responsive"],
+      description: "Use this slide for a second strong selling point.",
+      primary: { label: "Get a Quote", href: "#quote" },
+      secondary: { label: "Call Now", href: "tel:+27000000000" },
+    },
+    {
+      image: "/images/hero-funeral-3.jpg",
+      alt: "Client business work",
+      heading: "Built Around Your Needs",
+      phrases: ["Customer Focused", "Experienced Team", "Nationwide Support"],
+      description: "Use this slide for another important client message or service category.",
+      primary: { label: "Enquire Now", href: "#contact" },
+      secondary: { label: "Why Choose Us", href: "#why-us" },
+    },
   ],
-  about:{image:"/images/funeral-service-1.jpg",badge:"A Spectrum of Solutions",heading:"Support When It Matters Most",paragraphs:["Spectrum SA provides funeral cover packages designed for individuals and families, with cash payout options ranging from R5,000 to R20,000.","Our funeral cover includes access to 24/7 support and nationwide assistance. All premiums are monthly and cover remains subject to the applicable terms and conditions."],highlights:["48-Hour Payout","24/7 Support","Nationwide Assistance","R150 Once-Off Joining Fee"]},
-  servicesHeading:"Funeral Cover Packages", servicesIntro:"Choose Bronze, Silver, Gold or Platinum. Premiums are per month (p/m); eligibility and cover are subject to terms and conditions.",
-  services:[
-    {title:"Bronze — R5,000 Cash Payout",description:"Entry-level funeral cover with a R5,000 cash payout.",points:["Single no kids 18–64: R50/p.m.","Single no kids 65–74: R100/p.m.","Single no kids 75–84: R100/p.m.","Single with kids 18–64: R50/p.m.","Single with kids 65–74: R100/p.m.","Single with kids 75–84: R100/p.m.","Family with kids 18–64: R50/p.m.","Family with kids 65–74: R120/p.m.","Family (no kids) 75–84: R125/p.m.","Joining fee: R150 once-off"]},
-    {title:"Silver — R10,000 Cash Payout",description:"Funeral cover with a R10,000 cash payout.",points:["Single no kids 18–64: R80/p.m.","Single no kids 65–74: R170/p.m.","Single no kids 75–84: R200/p.m.","Single with kids 18–64: R100/p.m.","Single with kids 65–74: R170/p.m.","Single with kids 75–84: R200/p.m.","Family with kids 18–64: R100/p.m.","Family with kids 65–74: R200/p.m.","Family (no kids) 75–84: R200/p.m.","Joining fee: R150 once-off"]},
-    {title:"Gold — R15,000 Cash Payout",description:"Enhanced funeral cover with a R15,000 cash payout.",points:["Single no kids 18–64: R100/p.m.","Single no kids 65–74: R250/p.m.","Single no kids 75–84: R300/p.m.","Single with kids 18–64: R120/p.m.","Single with kids 65–74: R270/p.m.","Single with kids 75–84: R300/p.m.","Family with kids 18–64: R150/p.m.","Family with kids 65–74: R290/p.m.","Family (no kids) 75–84: R280/p.m.","Joining fee: R150 once-off"]},
-    {title:"Platinum — R20,000 Cash Payout",description:"Highest listed package with a R20,000 cash payout.",points:["Single no kids 18–64: R150/p.m.","Single no kids 65–74: No cover","Single no kids 75–84: No cover","Single with kids 18–64: R150/p.m.","Single with kids 65–74: No cover","Single with kids 75–84: No cover","Family with kids 18–64: R180/p.m.","Family with kids 65–74: No cover","Family (no kids) 75–84: No cover","Joining fee: R150 once-off"]}
+
+  about: {
+    image: "/images/funeral-service-1.jpg",
+    badge: "About Our Business",
+    heading: "Professional Service. Real Results.",
+    paragraphs: [
+      "Replace this paragraph with the client's company introduction, experience and service focus.",
+      "Use this paragraph for service areas, customer commitment, quality standards or another important business statement.",
+    ],
+    highlights: ["Professional Service", "Reliable Support", "Quality Work", "Customer Focused"],
+  },
+
+  servicesHeading: "Our Services",
+  servicesIntro: "Replace this introduction with a short explanation of the client's main services.",
+  services: [
+    {
+      title: "Service One",
+      description: "Short description of the first service.",
+      points: ["Feature or benefit one", "Feature or benefit two", "Feature or benefit three"],
+    },
+    {
+      title: "Service Two",
+      description: "Short description of the second service.",
+      points: ["Feature or benefit one", "Feature or benefit two", "Feature or benefit three"],
+    },
+    {
+      title: "Service Three",
+      description: "Short description of the third service.",
+      points: ["Feature or benefit one", "Feature or benefit two", "Feature or benefit three"],
+    },
+    {
+      title: "Service Four",
+      description: "Short description of the fourth service.",
+      points: ["Feature or benefit one", "Feature or benefit two", "Feature or benefit three"],
+    },
   ],
-  whyHeading:"Cover Benefits & Important Information", whyUs:[
-    {title:"Children Cover",text:"14–21 years: 100% covered • 6–13 years: 50% • 1–5 years: 25% • 0–1 year: 12.5%."},{title:"48-Hour Payout",text:"The package advertises a 48-hour payout, subject to policy terms, claim requirements and approval."},{title:"24/7 Support",text:"Support is available around the clock when assistance is needed."},{title:"Nationwide Assistance",text:"Spectrum SA provides nationwide assistance across South Africa."},{title:"Become an Agent",text:"Become an agent and earn weekly and monthly."},{title:"Refer a Client",text:"Refer a client and earn weekly. Contact Spectrum SA for programme details."}],
-  process:[{title:"Choose a Package",text:"Select Bronze, Silver, Gold or Platinum according to the available age and cover category."},{title:"Contact Spectrum SA",text:"WhatsApp or email the team to confirm eligibility, benefits and policy terms."},{title:"Join",text:"Complete the required application and pay the R150 once-off joining fee where applicable."},{title:"Stay Covered",text:"Keep monthly premiums up to date and retain your policy information for claims and support."}],
-  galleryHeading:"Together, Forever",galleryIntro:"Compassion, dignity and support for families during difficult moments.",galleryCategories:["Funeral Cover","Family Support"],gallery:[{url:"/images/hero-funeral-1.jpg",alt:"Funeral remembrance",category:"Family Support"},{url:"/images/hero-funeral-2.jpg",alt:"Cemetery remembrance",category:"Funeral Cover"},{url:"/images/hero-funeral-3.jpg",alt:"Funeral service",category:"Family Support"},{url:"/images/funeral-service-1.jpg",alt:"Funeral arrangement",category:"Funeral Cover"},{url:"/images/funeral-service-2.jpg",alt:"Memorial flowers",category:"Family Support"}],
-  quoteHeading:"Find the Right Funeral Cover",quoteText:"WhatsApp Spectrum SA to confirm the package, premium and eligibility that apply to you or your family.",contactServices:["Bronze Funeral Cover","Silver Funeral Cover","Gold Funeral Cover","Platinum Funeral Cover","Children Cover","Become an Agent","Refer a Client","Claims Enquiry","General Enquiry"],
-  faqs:[{q:"What funeral cover packages are available?",a:"Spectrum SA lists Bronze (R5,000 payout), Silver (R10,000), Gold (R15,000) and Platinum (R20,000). Premiums depend on age and cover category."},{q:"What is the joining fee?",a:"The poster lists a R150 once-off joining fee for all four packages."},{q:"How does children cover work?",a:"The listed children cover is 100% for ages 14–21, 50% for ages 6–13, 25% for ages 1–5, and 12.5% for ages 0–1."},{q:"How do I request a quote?",a:"WhatsApp 068 478 3093 or email quote@spectrum-sa.co.za to confirm your category, age, eligibility and premium."},{q:"How do I submit a claim enquiry?",a:"For claims enquiries, use claims@spectrum-sa.co.za or contact Spectrum SA on WhatsApp."},{q:"Are the premiums monthly?",a:"Yes. The poster states that all premiums are per month (p/m), and cover is subject to terms and conditions."}],
-  chat:{assistantLabel:"Spectrum SA assistant",quick:["View Funeral Packages","Get a Quote","Claims Enquiry","Children Cover","Become an Agent","Refer a Client"],steps:["Welcome to Spectrum SA — Together, Forever. How can we assist you today?","What is your name?","Which funeral cover package or service are you interested in?","What is your age and cover category (single, single with kids, or family)?","Please add any other details and we will continue on WhatsApp."]},
-  footer:{copyrightYear:2026,privacy:"Details submitted through this website or WhatsApp are used to respond to your enquiry. Contact Spectrum SA for the applicable privacy and policy documentation.",terms:"All premiums shown are per month (p/m). Cover is subject to terms and conditions, eligibility, waiting periods and applicable policy requirements. Joining fee is R150 once-off as advertised.",designerName:"WebDevPro",designerUrl:"https://www.webdevpro.co.za",designerPhoneDisplay:"+27 81 215 9792",designerPhoneTel:"+27812159792"}
+
+  whyHeading: "Why Choose Us",
+  whyUs: [
+    { title: "Professional", text: "Replace with a client-specific reason to choose the business." },
+    { title: "Reliable", text: "Replace with a client-specific reason to choose the business." },
+    { title: "Fast Response", text: "Replace with a client-specific reason to choose the business." },
+    { title: "Quality Service", text: "Replace with a client-specific reason to choose the business." },
+    { title: "Experienced Team", text: "Replace with a client-specific reason to choose the business." },
+    { title: "Customer Focused", text: "Replace with a client-specific reason to choose the business." },
+  ],
+
+  process: [
+    { title: "Contact Us", text: "Client contacts the business by WhatsApp, phone or contact form." },
+    { title: "Tell Us What You Need", text: "Collect the client's service requirements and important details." },
+    { title: "Get a Quote", text: "Provide the customer with the relevant quote or next step." },
+    { title: "We Deliver", text: "Complete the service professionally and keep the customer informed." },
+  ],
+
+  galleryHeading: "Our Work",
+  galleryIntro: "Replace these placeholder images with real client work, products, facilities or service images.",
+  galleryCategories: ["Projects", "Services"],
+
+  // The template is crash-safe even if future rebrands use fewer gallery items.
+  gallery: [
+    { url: "/images/hero-funeral-1.jpg", alt: "Client project one", category: "Projects" },
+    { url: "/images/hero-funeral-2.jpg", alt: "Client project two", category: "Services" },
+    { url: "/images/hero-funeral-3.jpg", alt: "Client project three", category: "Projects" },
+    { url: "/images/funeral-service-1.jpg", alt: "Client project four", category: "Services" },
+    { url: "/images/funeral-service-2.jpg", alt: "Client project five", category: "Projects" },
+  ],
+
+  quoteHeading: "Ready to Get Started?",
+  quoteText: "Contact us today for a quote or more information about our services.",
+  contactServices: ["Service One", "Service Two", "Service Three", "Service Four", "General Enquiry"],
+
+  faqs: [
+    { q: "What services do you offer?", a: "Replace this with the client's service summary." },
+    { q: "Which areas do you serve?", a: "Replace this with the client's service areas." },
+    { q: "How do I request a quote?", a: "Contact us by WhatsApp, phone or the website enquiry form." },
+    { q: "How quickly do you respond?", a: "Replace this with the client's normal response time or availability." },
+  ],
+
+  chat: {
+    assistantLabel: "Website assistant",
+    quick: ["View Services", "Get a Quote", "Call Us", "WhatsApp Us", "General Enquiry"],
+    steps: [
+      "Welcome. How can we assist you today?",
+      "What is your name?",
+      "Which service are you interested in?",
+      "Please tell us a little more about what you need.",
+      "Thank you. We will continue with you on WhatsApp.",
+    ],
+  },
+
+  footer: {
+    copyrightYear: 2026,
+    privacy: "Information submitted through this website is used only to respond to enquiries and provide requested services.",
+    terms: "Service information, pricing, availability and terms may vary. Contact the business to confirm current details.",
+    designerName: "WebDevPro",
+    designerUrl: "https://www.webdevpro.co.za",
+    designerPhoneDisplay: "+27 81 215 9792",
+    designerPhoneTel: "+27812159792",
+  },
 } as const;
-export const waLink = (message: string) => `https://wa.me/${siteConfig.whatsapp}?text=${encodeURIComponent(message)}`;
+
+export const waLink = (message: string) =>
+  `https://wa.me/${siteConfig.whatsapp}?text=${encodeURIComponent(message)}`;
