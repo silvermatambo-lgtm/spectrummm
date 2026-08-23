@@ -7,16 +7,34 @@ export const WHATSAPP = siteConfig.whatsapp;
 export const EMAIL = siteConfig.email;
 export const SITE = siteConfig.website;
 export { waLink };
+
 export type GalleryCategory = string;
-export interface Photo { url: string; alt: string; category: string; }
+export interface Photo {
+  url: string;
+  alt: string;
+  category: string;
+}
+
 export const PHOTOS: Photo[] = [...siteConfig.gallery];
+
+const heroImage = (index: number) =>
+  siteConfig.hero[index]?.image ?? siteConfig.hero[0]?.image ?? siteConfig.logo;
+
+const galleryImage = (index: number) =>
+  siteConfig.gallery[index]?.url ??
+  siteConfig.gallery[0]?.url ??
+  siteConfig.about.image ??
+  siteConfig.logo;
+
+// Safe image aliases for reusable template components.
+// Never assume a site has a fixed number of gallery images.
 export const IMG = {
-  completedModern: siteConfig.hero[0].image,
+  completedModern: heroImage(0),
   completedCurved: siteConfig.about.image,
-  renovationCrew: siteConfig.gallery[2].url,
-  renovationFinished: siteConfig.hero[1].image,
-  maintenanceClean: siteConfig.hero[2].image,
-  coverFitted: siteConfig.gallery[5].url,
-  coverInstall: siteConfig.gallery[6].url,
-  equipment: siteConfig.gallery[7].url,
+  renovationCrew: galleryImage(2),
+  renovationFinished: heroImage(1),
+  maintenanceClean: heroImage(2),
+  coverFitted: galleryImage(3),
+  coverInstall: galleryImage(4),
+  equipment: galleryImage(0),
 };
